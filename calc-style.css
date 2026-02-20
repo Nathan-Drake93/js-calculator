@@ -1,0 +1,163 @@
+body{
+    background: #020617;
+    margin: 0;
+    padding: 0;
+    font-family: 'Orbitron', sans-serif;
+}
+
+sup{
+    vertical-align: baseline;
+    position: relative;
+    line-height: 0;
+    font-size: 75%;
+    top: -0.5em;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #00E5FF;
+    font-size: 14px;
+    gap: 24px;
+}
+
+#gitLogo{
+    width: 35px;
+}
+.gitHub-Info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+
+.layout-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 8px;
+    min-width: 100vw;
+    min-height: 100vh;
+    padding-top: 24px;
+}
+
+.calculator-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    width: clamp(350px, 75vw, 600px);
+    height: fit-content;
+    background: #0B1220;
+    border: 6px solid #0F1C2E;
+    border-radius: 10px;
+    box-shadow: 0 0 6px #00E5FFFF,
+                0 0 16px #00E5FF99,
+                0 0 28px #00E5FF33;
+    padding: 32px;
+}
+
+.calculator-display{
+    display: flex;
+    background: #030B14;
+    height: 100px;
+    width: 100%;
+    color: #00E5FF;
+    box-shadow: 0 0 16px #00E5FFFF,
+                0 0 20px #00E5FF99,
+                0 0 35px #00E5FF33,
+                inset 0 0 20px #00E5FF22;
+    font-size: 48px;
+    align-items: center;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    padding: 0 24px;
+    overflow: hidden;
+    text-wrap: nowrap;
+}
+
+.calculator-keys-grid{
+    display: grid;
+    width: 100%;
+    gap: 0.25em;
+    grid-template-columns: repeat(5, minmax(50px, 1fr));
+    aspect-ratio: 1/1;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+    "negpos blank blank aclear clear"
+    "mc mr madd msub root"
+    "seven eight nine div pow"
+    "four five six mult mod"
+    "one two three sub equal"
+    "zero zero period add equal";
+}
+
+.key{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0F172A;
+    color: #00E5FF;
+    border: 1px solid #00E5FF;
+    box-shadow: 0 0 16px #00E5FF99;
+    font-family: inherit;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 2px;
+    font-size: 24px;
+    text-shadow: 0 0 24px #00E5FF;
+}
+
+.key:hover{
+    box-shadow: 0 0 18px #00E5FFCC;
+}
+
+.key:active{
+    background: #0A2233;
+    box-shadow: 0 0 20px #00E5FFFF,
+                0 0 30px #00E5FF99;
+}
+
+.small-btn{
+    font-size: 32px;
+}
+
+.equal{
+    /*background: #00E5FF;*/
+    background: linear-gradient(to bottom, #00F0FF, #00C8D8);
+    color: #031018;
+    box-shadow: 0 0 20px #00E5FF99,
+                inset 0 -4px 8px#00000040,
+                inset 0 0 10px #00E5FF66;
+}
+.equal:hover{
+    box-shadow: 0 0 18px #00E5FFCC;
+}
+.equal:active{
+    background: #33EEFF;
+    box-shadow: 0 0 20px #00E5FFFF,
+                0 0 30px #00E5FF99;
+}
+
+.operator:active{
+    color: #FF3B3B;
+    border-color: #FF3B3B;
+    box-shadow: 0 0 20px #FF3B3BFF,
+                0 0 30px #FF3B3B66,
+                inset 0 0 8px #FF3B3BFF,
+                inset 0 0 20px #FF3B3B66;
+}
+
+.operator.active {
+    color: #FF3B3B;
+    border-color: #FF3B3B;
+    box-shadow: 0 0 20px #FF3B3BCC;
+}
+
+.clear:active{
+    color: #FFB020;
+    border-color: #FFB020;
+    box-shadow: 0 0 20px #FFB020CC;
+}

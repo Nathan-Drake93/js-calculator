@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calc-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <script src="calculator.js" defer></script>
+</head>
+<body>
+    <div class="layout-container">
+        <div class="calculator-body">
+            <div class="calculator-display">Hello There</div>
+            <div class="calculator-keys-grid">
+                <button type="button" class="key number" style="grid-area: one" data-key="1" data-type="digit">1</button>
+                <button type="button" class="key number" style="grid-area: two" data-key="2" data-type="digit">2</button>
+                <button type="button" class="key number" style="grid-area: three" data-key="3" data-type="digit">3</button>
+                <button type="button" class="key number" style="grid-area: four" data-key="4" data-type="digit">4</button>
+                <button type="button" class="key number" style="grid-area: five" data-key="5" data-type="digit">5</button>
+                <button type="button" class="key number" style="grid-area: six" data-key="6" data-type="digit">6</button>
+                <button type="button" class="key number" style="grid-area: seven" data-key="7" data-type="digit">7</button>
+                <button type="button" class="key number" style="grid-area: eight" data-key="8" data-type="digit">8</button>
+                <button type="button" class="key number" style="grid-area: nine" data-key="9" data-type="digit">9</button>
+                <button type="button" class="key number" style="grid-area: zero" data-key="0" data-type="digit">0</button>
+                <button type="button" class="key number small-btn" style="grid-area: period" data-key="decimal" data-type="decimal">.</button>
+                <button type="button" class="key equal small-btn" style="grid-area: equal" data-key="equal" data-type="equal">&equals;</button>
+                <button type="button" class="key operator small-btn" style="grid-area: add" data-key="add" data-type="binary-op">&plus;</button>
+                <button type="button" class="key operator small-btn" style="grid-area: sub" data-key="sub" data-type="binary-op">&minus;</button>
+                <button type="button" class="key operator small-btn" style="grid-area: mult" data-key="mult" data-type="binary-op">&times;</button>
+                <button type="button" class="key operator small-btn" style="grid-area: div" data-key="div" data-type="binary-op">&divide;</button>
+                <button type="button" class="key operator small-btn" style="grid-area: mod" data-key="mod" data-type="binary-op">&percnt;</button>
+                <button type="button" class="key operator" style="grid-area: pow" data-key="pow" data-type="binary-op">x<sup>y</sup></button>
+                <button type="button" class="key operator small-btn" style="grid-area: root" data-key="root" data-type="unary-op">&radic;</button>
+                <button type="button" class="key operator" style="grid-area: mc" data-key="mc" data-type="memory">MC</button>
+                <button type="button" class="key operator" style="grid-area: mr" data-key="mr" data-type="memory">MR</button>
+                <button type="button" class="key operator" style="grid-area: msub" data-key="msub" data-type="memory">M&minus;</button>
+                <button type="button" class="key operator" style="grid-area: madd" data-key="madd" data-type="memory">M&plus;</button>
+                <button type="button" class="key clear" style="grid-area: clear" data-key="clear" data-type="system">C</button>
+                <button type="button" class="key clear" style="grid-area: aclear" data-key="aclear" data-type="system">AC</button>
+                <button type="button" class="key operator" style="grid-area: negpos" data-key="negpos" data-type="sign-toggle">&minus;/&plus;</button>
+                <div class="blank" style="grid-area: blank"></div>
+            </div>
+        </div>
+        <div class="footer">
+            <div>Copyright&ensp;&copy;&ensp;<span id="year">2026</span></div>
+            <div>|</div>
+            <div class="gitHub-Info">Nathan Drake<a href="https://github.com/Nathan-Drake93"><img id="gitLogo" src="/images/gitHubLogo.svg" alt="gitLogo"></a></div>
+        </div>
+    </div>
+</body>
+</html>
