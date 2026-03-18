@@ -74,7 +74,7 @@ sup{
     align-items: center;
     justify-content: flex-end;
     box-sizing: border-box;
-    padding: 0 24px;
+    padding: 0 12px;
     overflow: hidden;
     text-wrap: nowrap;
 }
@@ -150,10 +150,13 @@ sup{
                 inset 0 0 20px #FF3B3B66;
 }
 
-.operator.active {
+.operator.selected {
     color: #FF3B3B;
     border-color: #FF3B3B;
-    box-shadow: 0 0 20px #FF3B3BCC;
+    box-shadow: 0 0 20px #FF3B3BFF,
+    0 0 30px #FF3B3B66,
+    inset 0 0 8px #FF3B3BFF,
+    inset 0 0 20px #FF3B3B66;
 }
 
 .clear:active{
